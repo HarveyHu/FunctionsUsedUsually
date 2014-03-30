@@ -42,4 +42,11 @@
     return [numberFormat stringFromNumber:[NSNumber numberWithInteger:[number integerValue]]];
 }
 
+//把ImageView設定成正圓形
+-(UIImageView *) transformToCircleShape:(UIImageView *)imageView{
+    UIImageView *myImageView = [imageView copy];
+    [myImageView.layer setCornerRadius:myImageView.frame.size.width / 2];
+    [myImageView.layer setMasksToBounds:YES];
+    return myImageView;
+}
 @end

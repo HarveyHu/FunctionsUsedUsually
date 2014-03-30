@@ -17,4 +17,6 @@
 + (NSNumber *)chop_off:(NSNumber *)number;
 //滿千加逗號
 + (NSString *)formatNumberWithComma:(NSNumber *)number;
+//把ImageView設定成正圓形
+-(UIImageView *) transformToCircleShape:(UIImageView *)imageView;
 @end
