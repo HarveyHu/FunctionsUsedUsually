@@ -19,4 +19,9 @@
 + (NSString *)formatNumberWithComma:(NSNumber *)number;
 //把ImageView設定成正圓形
 -(UIImageView *) transformToCircleShape:(UIImageView *)imageView;
+
+//特價
++(NSAttributedString *)onSaleString;
+//照片分享社群
++(void) shareToSocialNetwork:(UIViewController *)myVC withPicture:(NSArray *)images;
 @end

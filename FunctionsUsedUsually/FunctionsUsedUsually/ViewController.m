@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CommonFunctions.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 320, 20)];
+    label.attributedText = [CommonFunctions onSaleString];
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning

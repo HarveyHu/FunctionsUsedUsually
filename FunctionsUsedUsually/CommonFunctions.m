@@ -49,4 +49,24 @@
     [myImageView.layer setMasksToBounds:YES];
     return myImageView;
 }
+
+//特價
++(NSAttributedString *) onSaleString{
+    NSDictionary *merchandiseInfo = @{@"price_on_sale": @20, @"price": @100};
+    NSMutableAttributedString * price = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"原價 NT$ %@ 特價 NT$ %@", [merchandiseInfo objectForKey:@"price"],[merchandiseInfo objectForKey:@"price_on_sale"]]];
+    NSRange specialRange = [price.string rangeOfString:@" 特價 NT$ "];
+    [price addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(specialRange.location ,price.length - specialRange.location)];
+    
+    [price addAttribute:NSStrikethroughStyleAttributeName value:@2 range:NSMakeRange(0 ,specialRange.location)];
+    return price;
+}
+
++(void) shareToSocialNetwork:(UIViewController *)myVC withPicture:(NSArray *)images{
+    //出現官方分享用的選擇按鈕( Open In ... )
+    //1 張圖片會出現 Twitter, Weibo
+    //2 張圖片以上，就只會有 Facebook, Flickr
+    //都會出現的是 Message, Email
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:images applicationActivities:nil];
+    [myVC presentViewController:activityViewController animated:YES completion:nil];
+}
 @end
