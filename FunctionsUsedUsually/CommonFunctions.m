@@ -61,6 +61,7 @@
     return price;
 }
 
+//照片分享社群
 +(void) shareToSocialNetwork:(UIViewController *)myVC withPicture:(NSArray *)images{
     //出現官方分享用的選擇按鈕( Open In ... )
     //1 張圖片會出現 Twitter, Weibo

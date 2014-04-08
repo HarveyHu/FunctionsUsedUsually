@@ -25,6 +25,7 @@
     [self.view addSubview:label];
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
