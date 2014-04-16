@@ -24,4 +24,6 @@
 +(NSAttributedString *)onSaleString;
 //照片分享社群
 +(void) shareToSocialNetwork:(UIViewController *)myVC withPicture:(NSArray *)images;
+//拆Json data
++ (NSDictionary *)parseJSonDataToDictionary:(NSData *)responseData;
 @end

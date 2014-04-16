@@ -70,4 +70,44 @@
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:images applicationActivities:nil];
     [myVC presentViewController:activityViewController animated:YES completion:nil];
 }
+
+//NSString to NSDate
++(NSDate *) converseToDateByString:(NSString *)dateString dateFormat:(NSString *)dateFormatString{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //[dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [dateFormatter setDateFormat:dateFormatString];
+    NSDate *date = [dateFormatter dateFromString:dateString];
+    return date;
+}
+
+//製作BackItem on Navigation Bar
++(void)_makeBackItemWithImage:(UIImage *)image
+                        frame:(CGRect)frame
+                       target:(id)targetObj
+                       action:(SEL)targetMethod
+               navigationItem:(UINavigationItem *)navigationItem
+{
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:frame];
+    [button addTarget:targetObj action:targetMethod forControlEvents:UIControlEventTouchUpInside];
+    [button setImage:image forState:UIControlStateNormal];
+    //[_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    //[_button.titleLabel setFont:[UIFont systemFontOfSize:15]];
+    //[_button.titleLabel setTitle:@"Edit" forState:UIControlStateNormal];
+    
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [navigationItem setLeftBarButtonItem:barItem animated:NO];
+}
+
++ (NSDictionary *) parseJSonDataToDictionary:(NSData *)responseData
+{
+    if( !responseData )
+    {
+        return nil;
+    }
+    return (NSDictionary *)[NSJSONSerialization JSONObjectWithData:responseData
+                                                           options:0
+                                                             error:nil];
+}
 @end
