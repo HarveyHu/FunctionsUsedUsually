@@ -26,4 +26,6 @@
 +(void) shareToSocialNetwork:(UIViewController *)myVC withPicture:(NSArray *)images;
 //拆Json data
 + (NSDictionary *)parseJSonDataToDictionary:(NSData *)responseData;
+//不cache memory每次都載圖
++ (UIImage *)imageNamedWithoutCache:(NSString *)imageName;
 @end

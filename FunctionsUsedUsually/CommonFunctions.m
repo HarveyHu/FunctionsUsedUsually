@@ -110,4 +110,9 @@
                                                            options:0
                                                              error:nil];
 }
+
++ (UIImage *)imageNamedWithoutCache:(NSString *)imageName
+{
+    return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], imageName]];
+}
 @end
