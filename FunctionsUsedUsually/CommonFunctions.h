@@ -28,4 +28,6 @@
 + (NSDictionary *)parseJSonDataToDictionary:(NSData *)responseData;
 //不cache memory每次都載圖
 + (UIImage *)imageNamedWithoutCache:(NSString *)imageName;
+//取得App文件資料夾的路徑
++ (NSURL *)applicationDocumentsDirectory;
 @end
