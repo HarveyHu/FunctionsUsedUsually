@@ -35,11 +35,21 @@
 //滿千加逗號
 + (NSString *)formatNumberWithComma:(NSNumber *)number
 {
-    NSNumberFormatter *numberFormat = [[NSNumberFormatter alloc] init];
-    numberFormat.usesGroupingSeparator = YES;
-    numberFormat.groupingSeparator  = @",";
-    numberFormat.groupingSize = 3;
-    return [numberFormat stringFromNumber:[NSNumber numberWithInteger:[number integerValue]]];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc]init];
+    //設顯示小數點下第二位
+    [formatter setMaximumFractionDigits:2];
+    //設千分位的逗點
+    [formatter setUsesGroupingSeparator:YES];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        
+    double entryFieldFloat = [number doubleValue];
+    if ([number.stringValue rangeOfString:@"."].length == 1) {
+        formatter.alwaysShowsDecimalSeparator = YES;
+        return [formatter stringFromNumber:[NSNumber numberWithDouble:entryFieldFloat]];
+    }
+    
+    formatter.alwaysShowsDecimalSeparator = NO;
+    return [formatter stringFromNumber:[NSNumber numberWithDouble:entryFieldFloat]];
 }
 
 //把ImageView設定成正圓形
