@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CommonFunctions.h"
+#import "UsefulMethods.h"
 
 @interface ViewController ()
 
@@ -21,8 +21,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 320, 20)];
-    label.attributedText = [CommonFunctions onSaleString];
+    label.attributedText = [UsefulMethods onSaleString];
     [self.view addSubview:label];
+    
+    NSLog(@"%@",[UsefulMethods formatNumberWithComma:@12132.678]);
+    
+    NSLog(@"1111 MD5 :%@",[UsefulMethods MD5:@"1111"]);
 }
 
 

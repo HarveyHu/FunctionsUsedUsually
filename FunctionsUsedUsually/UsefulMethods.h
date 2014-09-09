@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CommonFunctions : NSObject
+@interface UsefulMethods : NSObject
 //四捨五入
 + (NSNumber *)round_off:(NSNumber *)number;
 //無條件進位
@@ -30,4 +30,8 @@
 + (UIImage *)imageNamedWithoutCache:(NSString *)imageName;
 //取得App文件資料夾的路徑
 + (NSURL *)applicationDocumentsDirectory;
+
+//NSString或NSData用MD5加密
++ (NSString*)MD5:(id)inputValue;
+
 @end

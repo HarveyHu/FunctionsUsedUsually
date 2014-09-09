@@ -22,7 +22,7 @@
 		D893A7A118E414E5003C7CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D893A78318E414E5003C7CED /* UIKit.framework */; };
 		D893A7A918E414E5003C7CED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D893A7A718E414E5003C7CED /* InfoPlist.strings */; };
 		D893A7AB18E414E5003C7CED /* FunctionsUsedUsuallyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D893A7AA18E414E5003C7CED /* FunctionsUsedUsuallyTests.m */; };
-		D893A7B718E4154B003C7CED /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D893A7B618E4154B003C7CED /* CommonFunctions.m */; };
+		D893A7B718E4154B003C7CED /* UsefulMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = D893A7B618E4154B003C7CED /* UsefulMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 		D893A7A618E414E5003C7CED /* FunctionsUsedUsuallyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunctionsUsedUsuallyTests-Info.plist"; sourceTree = "<group>"; };
 		D893A7A818E414E5003C7CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D893A7AA18E414E5003C7CED /* FunctionsUsedUsuallyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionsUsedUsuallyTests.m; sourceTree = "<group>"; };
-		D893A7B518E4154B003C7CED /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
-		D893A7B618E4154B003C7CED /* CommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunctions.m; sourceTree = "<group>"; };
+		D893A7B518E4154B003C7CED /* UsefulMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsefulMethods.h; sourceTree = "<group>"; };
+		D893A7B618E4154B003C7CED /* UsefulMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsefulMethods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +162,8 @@
 		D893A7B418E41504003C7CED /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				D893A7B518E4154B003C7CED /* CommonFunctions.h */,
-				D893A7B618E4154B003C7CED /* CommonFunctions.m */,
+				D893A7B518E4154B003C7CED /* UsefulMethods.h */,
+				D893A7B618E4154B003C7CED /* UsefulMethods.m */,
 				D82343CE18F3EEFB00B09233 /* NSDate+Format.h */,
 				D82343CF18F3EEFB00B09233 /* NSDate+Format.m */,
 			);
@@ -270,7 +270,7 @@
 				D82343D018F3EEFB00B09233 /* NSDate+Format.m in Sources */,
 				D893A79618E414E5003C7CED /* ViewController.m in Sources */,
 				D893A79018E414E5003C7CED /* AppDelegate.m in Sources */,
-				D893A7B718E4154B003C7CED /* CommonFunctions.m in Sources */,
+				D893A7B718E4154B003C7CED /* UsefulMethods.m in Sources */,
 				D893A78C18E414E5003C7CED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
