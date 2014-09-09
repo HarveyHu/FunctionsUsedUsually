@@ -173,5 +173,12 @@
 
     return output;
 }
-
+//立即發送本地通知
++(void) fireLocalNotificationWithMessage:(NSString *)alertBody userInfo:(NSDictionary *)userInfo
+{
+    UILocalNotification *localNotification = [UILocalNotification new];
+    localNotification.alertBody            = alertBody;
+    localNotification.userInfo             = userInfo;
+    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+}
 @end

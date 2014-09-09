@@ -33,5 +33,6 @@
 
 //NSString或NSData用MD5加密
 + (NSString*)MD5:(id)inputValue;
-
+//立即發送本地通知
++(void) fireLocalNotificationWithMessage:(NSString *)alertBody userInfo:(NSDictionary *)userInfo;
 @end
