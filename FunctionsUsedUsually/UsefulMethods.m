@@ -181,4 +181,20 @@
     localNotification.userInfo             = userInfo;
     [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
 }
+
+//判斷是否有英文字
++(BOOL) isContainingEnglishCharacters:(NSString *)theString{
+    NSRegularExpression *regex = [[NSRegularExpression alloc]
+                                  initWithPattern:@"[a-zA-Z]" options:0 error:NULL];
+    
+    // Assuming you have some NSString `myString`.
+    NSUInteger matches = [regex numberOfMatchesInString:theString options:0
+                                                  range:NSMakeRange(0, [theString length])];
+    
+    if (matches > 0) {
+        // the string contains at least one English letter.
+        return YES;
+    }
+    return NO;
+}
 @end
