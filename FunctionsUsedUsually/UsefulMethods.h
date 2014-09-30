@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class SKPaymentTransaction;
 @interface UsefulMethods : NSObject
 //四捨五入
 + (NSNumber *)round_off:(NSNumber *)number;
@@ -33,9 +34,13 @@
 
 //NSString或NSData用MD5加密
 + (NSString*)MD5:(id)inputValue;
+
 //立即發送本地通知
 +(void) fireLocalNotificationWithMessage:(NSString *)alertBody userInfo:(NSDictionary *)userInfo;
 
 //判斷是否有英文字
 +(BOOL) isContainingEnglishCharacters:(NSString *)theString;
+
+//取得iAP的receipt
++(NSData *) getReceiptData:(SKPaymentTransaction *)transaction;
 @end

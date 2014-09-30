@@ -8,6 +8,7 @@
 
 #import "UsefulMethods.h"
 #import <CommonCrypto/CommonDigest.h>
+#import <StoreKit/StoreKit.h>
 
 @implementation UsefulMethods
 
@@ -196,5 +197,19 @@
         return YES;
     }
     return NO;
+}
+
+//取得iAP的receipt
++(NSData *) getReceiptData:(SKPaymentTransaction *)transaction{
+    NSData *receiptData = nil;
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        receiptData = transaction.transactionReceipt;
+    }
+    else {
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[[NSBundle mainBundle] appStoreReceiptURL]];
+        NSError *error = nil;
+        receiptData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:nil error:&error];
+    }
+    return receiptData;
 }
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D82343D018F3EEFB00B09233 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = D82343CF18F3EEFB00B09233 /* NSDate+Format.m */; };
+		D871161319DA58F400F045EF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D871161219DA58F400F045EF /* StoreKit.framework */; };
 		D893A78018E414E5003C7CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D893A77F18E414E5003C7CED /* Foundation.framework */; };
 		D893A78218E414E5003C7CED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D893A78118E414E5003C7CED /* CoreGraphics.framework */; };
 		D893A78418E414E5003C7CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D893A78318E414E5003C7CED /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		D82343CE18F3EEFB00B09233 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
 		D82343CF18F3EEFB00B09233 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
+		D871161219DA58F400F045EF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D893A77C18E414E5003C7CED /* FunctionsUsedUsually.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionsUsedUsually.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D893A77F18E414E5003C7CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D893A78118E414E5003C7CED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D871161319DA58F400F045EF /* StoreKit.framework in Frameworks */,
 				D893A78218E414E5003C7CED /* CoreGraphics.framework in Frameworks */,
 				D893A78418E414E5003C7CED /* UIKit.framework in Frameworks */,
 				D893A78018E414E5003C7CED /* Foundation.framework in Frameworks */,
@@ -108,6 +111,7 @@
 		D893A77E18E414E5003C7CED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D871161219DA58F400F045EF /* StoreKit.framework */,
 				D893A77F18E414E5003C7CED /* Foundation.framework */,
 				D893A78118E414E5003C7CED /* CoreGraphics.framework */,
 				D893A78318E414E5003C7CED /* UIKit.framework */,
