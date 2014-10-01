@@ -45,5 +45,5 @@
 +(NSData *) getReceiptData:(SKPaymentTransaction *)transaction;
 
 //解決iOS 7以上版面會跑掉的問題
--(void) setViewControllerTranslucent:(UIViewController *)viewController;
++(void) setViewControllerTranslucent:(UIViewController *)viewController;
 @end

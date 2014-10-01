@@ -214,7 +214,7 @@
 }
 
 //解決iOS 7以上版面會跑掉的問題
--(void) setViewControllerTranslucent:(UIViewController *)viewController{
++(void) setViewControllerTranslucent:(UIViewController *)viewController{
     
     if( [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f )
     {
