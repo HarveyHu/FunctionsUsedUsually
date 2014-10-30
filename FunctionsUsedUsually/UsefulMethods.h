@@ -50,4 +50,6 @@
 //取得指定文件資料夾的圖片
 +(UIImage *) getImageWithName:(NSString *)imageName;
 
+//將圖片存入指定文件資料夾
++(void) saveImageToDocumentFolder:(UIImage *)image imageName:(NSString *)imageName；
 @end
