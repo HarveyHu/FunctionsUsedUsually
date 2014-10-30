@@ -229,7 +229,7 @@
 }
 
 //取得指定文件資料夾的圖片
-+(UIImage *) getImageWithName:(NSString *)imageName{
++(UIImage *) getImageInDocumentFolderWithName:(NSString *)imageName{
     
     NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     UIImage *image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", documentPath, imageName]];
