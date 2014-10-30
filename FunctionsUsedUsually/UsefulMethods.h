@@ -46,4 +46,8 @@
 
 //解決iOS 7以上版面會跑掉的問題
 +(void) setViewControllerTranslucent:(UIViewController *)viewController;
+
+//取得指定文件資料夾的圖片
++(UIImage *) getImageWithName:(NSString *)imageName;
+
 @end
