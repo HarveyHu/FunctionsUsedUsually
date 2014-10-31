@@ -242,4 +242,22 @@
     NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     [UIImagePNGRepresentation(image) writeToFile:[documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", imageName]] options:NSAtomicWrite error:nil];
 }
+
+//得到按字母排列的CountryNameArray
++(NSArray *) getCountryNameArray {
+    
+    NSArray *countryNameArray;
+    NSArray *countryCodes = [NSLocale ISOCountryCodes];
+    NSMutableArray *countryStringArray = [NSMutableArray arrayWithCapacity:[countryCodes count]];
+    
+    for (NSString *countryCode in countryCodes)
+    {
+        NSString *identifier = [NSLocale localeIdentifierFromComponents: [NSDictionary dictionaryWithObject: countryCode forKey: NSLocaleCountryCode]];
+        NSString *countryName = [[NSLocale currentLocale] displayNameForKey: NSLocaleIdentifier value: identifier];
+        [countryStringArray addObject:countryName];
+    }
+    countryNameArray = [countryStringArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    return countryNameArray;
+}
 @end
