@@ -260,4 +260,66 @@
     
     return countryNameArray;
 }
+
+//把十六進制的字串轉為NSNumber
++(NSNumber *) unitDigitFromHexString:(NSString *)unitDigit{
+    int number = 0;
+    if ([unitDigit isEqualToString:@"a"] || [unitDigit isEqualToString:@"A"]) {
+        number = 10;
+    }
+    else if ([unitDigit isEqualToString:@"b"] || [unitDigit isEqualToString:@"B"]) {
+        number = 11;
+    }
+    else if ([unitDigit isEqualToString:@"c"] || [unitDigit isEqualToString:@"C"]) {
+        number = 12;
+    }
+    else if ([unitDigit isEqualToString:@"d"] || [unitDigit isEqualToString:@"D"]) {
+        number = 13;
+    }
+    else if ([unitDigit isEqualToString:@"e"] || [unitDigit isEqualToString:@"E"]) {
+        number = 14;
+    }
+    else if ([unitDigit isEqualToString:@"f"] || [unitDigit isEqualToString:@"F"]) {
+        number = 15;
+    }
+    else if (0 <= [unitDigit intValue] < 10)
+    {
+        NSNumber *result = [NSNumber numberWithInt:[unitDigit intValue]];
+        return result;
+    }
+    else
+    {
+        return nil;
+    }
+    
+    NSNumber *result = [NSNumber numberWithInt:number];
+    return result;
+}
+
+//把十六進位字串逐字轉成NSData
++(NSNumber *) getDataFromHexadecimalString:(NSString*)hexString{
+    NSUInteger len = hexString.length;
+    NSString* dataString = [[NSString alloc]initWithString:hexString];
+    
+    NSMutableData* data = [[NSMutableData alloc]init];
+    if (dataString.length % 2 != 0) {
+        dataString = [NSString stringWithFormat:@"0%@",dataString];
+    }
+    //逐字轉成Bytes
+    for (int i = 0; i < len; i = i + 2)
+    {
+        NSRange range = NSMakeRange(i, 1);
+        NSString *firstString = [dataString substringWithRange:range];
+        range = NSMakeRange(i + 1, 1);
+        NSString *secondString = [dataString substringWithRange:range];
+        NSNumber* firstDigit = [NSNumber numberWithInt:[[UsefulMethods unitDigitFromHexString:firstString] intValue] * 16];
+        NSNumber* secondDigit = [UsefulMethods unitDigitFromHexString:secondString];
+        NSNumber* number = [NSNumber numberWithInt:[firstDigit intValue] + [secondDigit intValue]];
+        
+        unsigned char charNumber = [number charValue];
+        [data appendBytes:&charNumber length:1];
+        
+    }
+    return data;
+}
 @end

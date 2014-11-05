@@ -55,4 +55,10 @@
 
 //得到按字母排列的CountryNameArray
 +(NSArray *) getCountryNameArray;
+
+//把十六進制的字串轉為NSNumber
++(NSNumber *) unitDigitFromHexString:(NSString *)unitDigit;
+
+//把十六進位字串逐字轉成NSData
++(NSData *) getDataFromHexadecimalString:(NSString*)hexString;
 @end
