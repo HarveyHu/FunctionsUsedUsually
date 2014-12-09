@@ -322,4 +322,11 @@
     }
     return data;
 }
+
+//取得文件資料夾的路徑(另一種寫法)
++(NSString *) documentDirectoryPath{
+    NSString * docDirectoryPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    return docDirectoryPath;
+}
 @end

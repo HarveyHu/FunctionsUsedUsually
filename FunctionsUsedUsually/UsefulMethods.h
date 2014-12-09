@@ -61,4 +61,7 @@
 
 //把十六進位字串逐字轉成NSData
 +(NSData *) getDataFromHexadecimalString:(NSString*)hexString;
+
+//取得文件資料夾的路徑(另一種寫法)
++(NSString *) documentDirectoryPath;
 @end
