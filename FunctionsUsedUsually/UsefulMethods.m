@@ -297,7 +297,7 @@
 }
 
 //把十六進位字串逐字轉成NSData
-+(NSNumber *) getDataFromHexadecimalString:(NSString*)hexString{
++(NSData *) getDataFromHexadecimalString:(NSString*)hexString{
     NSUInteger len = hexString.length;
     NSString* dataString = [[NSString alloc]initWithString:hexString];
     
