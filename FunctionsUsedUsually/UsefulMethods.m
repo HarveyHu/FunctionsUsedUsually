@@ -335,7 +335,10 @@
     NSMutableString* dataString = [[NSMutableString alloc]init];
     for (NSData *piece in dataSplitIntoByte) {
         NSNumber *number = [NSNumber numberWithUnsignedShort:(unsigned char)[piece bytes]];
-        NSString *pieceString = [UsefulMethods unitDigitStringFromHex:number];
+        //一個byte轉換為二個16進制數字
+        NSNumber *digitInTens = @([number integerValue] / 16);
+        NSNumber *digitInOnes = @([number integerValue] % 16);
+        NSString *pieceString = [NSString stringWithFormat:@"%@%@", [UsefulMethods unitDigitStringFromHex:digitInTens], [UsefulMethods unitDigitStringFromHex:digitInOnes]];
         [dataString appendString:pieceString];
     }
     
