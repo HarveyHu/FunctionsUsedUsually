@@ -62,6 +62,15 @@
 //把十六進位字串逐字轉成NSData
 +(NSData *) getDataFromHexadecimalString:(NSString*)hexString;
 
+//把NSData以byte分割，再以十六進制字串表示
++(NSString *) getHexadecimalStringFromData:(NSData *)data;
+
+//把NSNumber轉為十六進制的字串
++(NSString *) unitDigitStringFromHex:(NSNumber *)HexNumber;
+
+//把data切成等長度的小data，放到Array中
++(NSArray *) splitDataIntoChunks:(NSData*)data bytesPerChunk:(NSUInteger)bytesPerChunk;
+
 //取得文件資料夾的路徑(另一種寫法)
 +(NSString *) documentDirectoryPath;
 @end

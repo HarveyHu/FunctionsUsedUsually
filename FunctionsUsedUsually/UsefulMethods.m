@@ -323,6 +323,85 @@
     return data;
 }
 
+
+//把NSData以byte分割，再以十六進制字串表示
++(NSString *) getHexadecimalStringFromData:(NSData *)data{
+    if (data.length == 0) {
+        return nil;
+    }
+    
+    NSArray* dataSplitIntoByte = [UsefulMethods splitDataIntoChunks:data bytesPerChunk:1];
+    
+    NSMutableString* dataString = [[NSMutableString alloc]init];
+    for (NSData *piece in dataSplitIntoByte) {
+        NSNumber *number = [NSNumber numberWithUnsignedShort:(unsigned char)[piece bytes]];
+        NSString *pieceString = [UsefulMethods unitDigitStringFromHex:number];
+        [dataString appendString:pieceString];
+    }
+    
+    return dataString;
+}
+
+//把NSNumber轉為十六進制的字串
++(NSString *) unitDigitStringFromHex:(NSNumber *)HexNumber{
+    NSInteger number = [HexNumber integerValue];
+    switch (number) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            return [HexNumber stringValue];
+            break;
+        case 10:
+            return @"A";
+            break;
+        case 11:
+            return @"B";
+            break;
+        case 12:
+            return @"C";
+            break;
+        case 13:
+            return @"D";
+            break;
+        case 14:
+            return @"E";
+            break;
+        case 15:
+            return @"F";
+            break;
+            
+        default:
+            return nil;
+            break;
+    }
+}
+
+//把data切成等長度的小data，放到Array中
++ (NSArray*)splitDataIntoChunks:(NSData*)data bytesPerChunk:(NSUInteger)bytesPerChunk{
+    
+    if(!data) return nil;
+    
+    NSMutableArray* array = [[NSMutableArray alloc]init];
+    NSUInteger dataLength = [data length];
+    NSUInteger chunkCount = 0;
+    while (chunkCount < dataLength)
+    {
+        NSRange range = NSMakeRange(chunkCount, bytesPerChunk);
+        NSData* chunk = [data subdataWithRange:range];
+        [array addObject:chunk];
+        chunkCount += 2;
+    }
+    
+    return array;
+}
+
 //取得文件資料夾的路徑(另一種寫法)
 +(NSString *) documentDirectoryPath{
     NSString * docDirectoryPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
