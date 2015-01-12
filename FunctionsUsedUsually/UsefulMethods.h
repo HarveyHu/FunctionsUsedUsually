@@ -73,4 +73,7 @@
 
 //取得文件資料夾的路徑(另一種寫法)
 +(NSString *) documentDirectoryPath;
+
+//縮放圖片到指定大小
++(UIImage *) scaleToSize:(UIImage *)image size:(CGSize)size;
 @end

@@ -411,4 +411,14 @@
     
     return docDirectoryPath;
 }
+
+//縮放圖片到指定大小
++(UIImage *)scaleToSize:(UIImage *)image size:(CGSize)size
+{
+    UIGraphicsBeginImageContext(size);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;
+}
 @end
