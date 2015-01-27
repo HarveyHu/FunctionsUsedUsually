@@ -43,7 +43,7 @@
     //設千分位的逗點
     [formatter setUsesGroupingSeparator:YES];
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-        
+    
     double entryFieldFloat = [number doubleValue];
     if ([number.stringValue rangeOfString:@"."].length == 1) {
         formatter.alwaysShowsDecimalSeparator = YES;
@@ -171,7 +171,7 @@
         for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
             [output appendFormat:@"%02x",md5Buffer[i]];
     }
-
+    
     return output;
 }
 //立即發送本地通知
@@ -420,5 +420,17 @@
     UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return scaledImage;
+}
+
+//NSString to NSNumber
++(NSNumber *) stringToNumber:(NSString *)string
+{
+    //新增一個numberFormatter
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    //將style設定為NSNumberFormatterDecimalStyle
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    //NSString轉成NSNumber
+    NSNumber *number = [numberFormatter numberFromString:string];
+    return number;
 }
 @end

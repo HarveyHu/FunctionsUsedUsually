@@ -76,4 +76,7 @@
 
 //縮放圖片到指定大小
 +(UIImage *) scaleToSize:(UIImage *)image size:(CGSize)size;
+
+//NSString to NSNumber
++(NSNumber *) stringToNumber:(NSString *)string;
 @end
