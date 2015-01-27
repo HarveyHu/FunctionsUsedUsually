@@ -40,23 +40,23 @@
 		D82343CE18F3EEFB00B09233 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
 		D82343CF18F3EEFB00B09233 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
 		D871161219DA58F400F045EF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		D893A77C18E414E5003C7CED /* FunctionsUsedUsually.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionsUsedUsually.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D893A77C18E414E5003C7CED /* FunctionsUsuallyInUse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionsUsuallyInUse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D893A77F18E414E5003C7CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D893A78118E414E5003C7CED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D893A78318E414E5003C7CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D893A78718E414E5003C7CED /* FunctionsUsedUsually-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunctionsUsedUsually-Info.plist"; sourceTree = "<group>"; };
+		D893A78718E414E5003C7CED /* FunctionsUsuallyInUse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunctionsUsuallyInUse-Info.plist"; sourceTree = "<group>"; };
 		D893A78918E414E5003C7CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D893A78B18E414E5003C7CED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D893A78D18E414E5003C7CED /* FunctionsUsedUsually-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionsUsedUsually-Prefix.pch"; sourceTree = "<group>"; };
+		D893A78D18E414E5003C7CED /* FunctionsUsuallyInUse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionsUsuallyInUse-Prefix.pch"; sourceTree = "<group>"; };
 		D893A78E18E414E5003C7CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D893A78F18E414E5003C7CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D893A79218E414E5003C7CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D893A79418E414E5003C7CED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D893A79518E414E5003C7CED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D893A79718E414E5003C7CED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D893A79D18E414E5003C7CED /* FunctionsUsedUsuallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionsUsedUsuallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D893A79D18E414E5003C7CED /* FunctionsUsuallyInUseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionsUsuallyInUseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D893A79E18E414E5003C7CED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D893A7A618E414E5003C7CED /* FunctionsUsedUsuallyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunctionsUsedUsuallyTests-Info.plist"; sourceTree = "<group>"; };
+		D893A7A618E414E5003C7CED /* FunctionsUsuallyInUseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunctionsUsuallyInUseTests-Info.plist"; sourceTree = "<group>"; };
 		D893A7A818E414E5003C7CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D893A7AA18E414E5003C7CED /* FunctionsUsedUsuallyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionsUsedUsuallyTests.m; sourceTree = "<group>"; };
 		D893A7B518E4154B003C7CED /* UsefulMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsefulMethods.h; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				D893A7B418E41504003C7CED /* Class */,
-				D893A78518E414E5003C7CED /* FunctionsUsedUsually */,
-				D893A7A418E414E5003C7CED /* FunctionsUsedUsuallyTests */,
+				D893A78518E414E5003C7CED /* FunctionsUsuallyInUse */,
+				D893A7A418E414E5003C7CED /* FunctionsUsuallyInUseTests */,
 				D893A77E18E414E5003C7CED /* Frameworks */,
 				D893A77D18E414E5003C7CED /* Products */,
 			);
@@ -102,8 +102,8 @@
 		D893A77D18E414E5003C7CED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D893A77C18E414E5003C7CED /* FunctionsUsedUsually.app */,
-				D893A79D18E414E5003C7CED /* FunctionsUsedUsuallyTests.xctest */,
+				D893A77C18E414E5003C7CED /* FunctionsUsuallyInUse.app */,
+				D893A79D18E414E5003C7CED /* FunctionsUsuallyInUseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D893A78518E414E5003C7CED /* FunctionsUsedUsually */ = {
+		D893A78518E414E5003C7CED /* FunctionsUsuallyInUse */ = {
 			isa = PBXGroup;
 			children = (
 				D893A78E18E414E5003C7CED /* AppDelegate.h */,
@@ -131,33 +131,35 @@
 				D893A79718E414E5003C7CED /* Images.xcassets */,
 				D893A78618E414E5003C7CED /* Supporting Files */,
 			);
+			name = FunctionsUsuallyInUse;
 			path = FunctionsUsedUsually;
 			sourceTree = "<group>";
 		};
 		D893A78618E414E5003C7CED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D893A78718E414E5003C7CED /* FunctionsUsedUsually-Info.plist */,
+				D893A78718E414E5003C7CED /* FunctionsUsuallyInUse-Info.plist */,
 				D893A78818E414E5003C7CED /* InfoPlist.strings */,
 				D893A78B18E414E5003C7CED /* main.m */,
-				D893A78D18E414E5003C7CED /* FunctionsUsedUsually-Prefix.pch */,
+				D893A78D18E414E5003C7CED /* FunctionsUsuallyInUse-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D893A7A418E414E5003C7CED /* FunctionsUsedUsuallyTests */ = {
+		D893A7A418E414E5003C7CED /* FunctionsUsuallyInUseTests */ = {
 			isa = PBXGroup;
 			children = (
 				D893A7AA18E414E5003C7CED /* FunctionsUsedUsuallyTests.m */,
 				D893A7A518E414E5003C7CED /* Supporting Files */,
 			);
+			name = FunctionsUsuallyInUseTests;
 			path = FunctionsUsedUsuallyTests;
 			sourceTree = "<group>";
 		};
 		D893A7A518E414E5003C7CED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D893A7A618E414E5003C7CED /* FunctionsUsedUsuallyTests-Info.plist */,
+				D893A7A618E414E5003C7CED /* FunctionsUsuallyInUseTests-Info.plist */,
 				D893A7A718E414E5003C7CED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -177,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D893A77B18E414E5003C7CED /* FunctionsUsedUsually */ = {
+		D893A77B18E414E5003C7CED /* FunctionsUsuallyInUse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D893A7AE18E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsedUsually" */;
+			buildConfigurationList = D893A7AE18E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsuallyInUse" */;
 			buildPhases = (
 				D893A77818E414E5003C7CED /* Sources */,
 				D893A77918E414E5003C7CED /* Frameworks */,
@@ -189,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = FunctionsUsedUsually;
+			name = FunctionsUsuallyInUse;
 			productName = FunctionsUsedUsually;
-			productReference = D893A77C18E414E5003C7CED /* FunctionsUsedUsually.app */;
+			productReference = D893A77C18E414E5003C7CED /* FunctionsUsuallyInUse.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D893A79C18E414E5003C7CED /* FunctionsUsedUsuallyTests */ = {
+		D893A79C18E414E5003C7CED /* FunctionsUsuallyInUseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D893A7B118E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsedUsuallyTests" */;
+			buildConfigurationList = D893A7B118E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsuallyInUseTests" */;
 			buildPhases = (
 				D893A79918E414E5003C7CED /* Sources */,
 				D893A79A18E414E5003C7CED /* Frameworks */,
@@ -207,9 +209,9 @@
 			dependencies = (
 				D893A7A318E414E5003C7CED /* PBXTargetDependency */,
 			);
-			name = FunctionsUsedUsuallyTests;
+			name = FunctionsUsuallyInUseTests;
 			productName = FunctionsUsedUsuallyTests;
-			productReference = D893A79D18E414E5003C7CED /* FunctionsUsedUsuallyTests.xctest */;
+			productReference = D893A79D18E414E5003C7CED /* FunctionsUsuallyInUseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D893A77718E414E5003C7CED /* Build configuration list for PBXProject "FunctionsUsedUsually" */;
+			buildConfigurationList = D893A77718E414E5003C7CED /* Build configuration list for PBXProject "FunctionsUsuallyInUse" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D893A77B18E414E5003C7CED /* FunctionsUsedUsually */,
-				D893A79C18E414E5003C7CED /* FunctionsUsedUsuallyTests */,
+				D893A77B18E414E5003C7CED /* FunctionsUsuallyInUse */,
+				D893A79C18E414E5003C7CED /* FunctionsUsuallyInUseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		D893A7A318E414E5003C7CED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D893A77B18E414E5003C7CED /* FunctionsUsedUsually */;
+			target = D893A77B18E414E5003C7CED /* FunctionsUsuallyInUse */;
 			targetProxy = D893A7A218E414E5003C7CED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -401,9 +403,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FunctionsUsedUsually/FunctionsUsedUsually-Prefix.pch";
-				INFOPLIST_FILE = "FunctionsUsedUsually/FunctionsUsedUsually-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "FunctionsUsedUsually/FunctionsUsuallyInUse-Prefix.pch";
+				INFOPLIST_FILE = "FunctionsUsedUsually/FunctionsUsuallyInUse-Info.plist";
+				PRODUCT_NAME = FunctionsUsuallyInUse;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,9 +416,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FunctionsUsedUsually/FunctionsUsedUsually-Prefix.pch";
-				INFOPLIST_FILE = "FunctionsUsedUsually/FunctionsUsedUsually-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "FunctionsUsedUsually/FunctionsUsuallyInUse-Prefix.pch";
+				INFOPLIST_FILE = "FunctionsUsedUsually/FunctionsUsuallyInUse-Info.plist";
+				PRODUCT_NAME = FunctionsUsuallyInUse;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -436,8 +438,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FunctionsUsedUsuallyTests/FunctionsUsedUsuallyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FunctionsUsedUsuallyTests/FunctionsUsuallyInUseTests-Info.plist";
+				PRODUCT_NAME = FunctionsUsuallyInUseTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -454,8 +456,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunctionsUsedUsually/FunctionsUsedUsually-Prefix.pch";
-				INFOPLIST_FILE = "FunctionsUsedUsuallyTests/FunctionsUsedUsuallyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FunctionsUsedUsuallyTests/FunctionsUsuallyInUseTests-Info.plist";
+				PRODUCT_NAME = FunctionsUsuallyInUseTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -464,7 +466,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D893A77718E414E5003C7CED /* Build configuration list for PBXProject "FunctionsUsedUsually" */ = {
+		D893A77718E414E5003C7CED /* Build configuration list for PBXProject "FunctionsUsuallyInUse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D893A7AC18E414E5003C7CED /* Debug */,
@@ -473,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D893A7AE18E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsedUsually" */ = {
+		D893A7AE18E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsuallyInUse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D893A7AF18E414E5003C7CED /* Debug */,
@@ -482,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D893A7B118E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsedUsuallyTests" */ = {
+		D893A7B118E414E5003C7CED /* Build configuration list for PBXNativeTarget "FunctionsUsuallyInUseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D893A7B218E414E5003C7CED /* Debug */,
