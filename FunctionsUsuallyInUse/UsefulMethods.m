@@ -433,4 +433,13 @@
     NSNumber *number = [numberFormatter numberFromString:string];
     return number;
 }
+
+//格式化時間轉文字
++(NSString *) formatedDate:(NSDate *)date dateFormat:(NSString *)dateFormat{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init] ;
+    [dateFormatter setDateFormat:dateFormat];
+    NSString *formatedDateString = [dateFormatter stringFromDate:date];
+    return formatedDateString;
+}
+
 @end

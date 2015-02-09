@@ -27,6 +27,8 @@
     NSLog(@"%@",[UsefulMethods formatNumberWithComma:@12132.678]);
     
     NSLog(@"1111 MD5 :%@",[UsefulMethods MD5:@"1111"]);
+    
+    NSLog(@"現在時刻:%@",[UsefulMethods formatedDate:[NSDate date] dateFormat:@"yyyy-MMM-dd"]);
 }
 
 

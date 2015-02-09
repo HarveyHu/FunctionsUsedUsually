@@ -79,4 +79,7 @@
 
 //NSString to NSNumber
 +(NSNumber *) stringToNumber:(NSString *)string;
+
+//格式化時間轉文字
++(NSString *) formatedDate:(NSDate *)date dateFormat:(NSString *)dateFormat;
 @end
